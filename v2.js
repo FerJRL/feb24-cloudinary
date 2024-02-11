@@ -10,7 +10,6 @@ const app = express.Router();
 // UPLOAD IMAGE
 
 const upload_preset_signed = process.env.UPLOAD_PRESET_SIGNED;
-const upload_preset_unsigned = process.env.UPLOAD_PRESET_UNSIGNED;
 
 app.post('/images', upload.single('image'), async (req, res) => {
 
